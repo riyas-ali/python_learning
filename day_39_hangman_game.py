@@ -1,6 +1,6 @@
 import random
 
-word_list = ["apple", "banana", "potato", "Python", "Swift", "C++"]
+word_list = ["apple", "banana", "potato", "python", "swift", "c++"]
 chosen_word = random.choice(word_list)
 display = []
 lives = 6
