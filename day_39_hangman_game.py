@@ -78,4 +78,3 @@ while not game_over:
         print()
         print("You Win...!")
     print(HANGMANPICS[lives])
-
