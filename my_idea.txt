@@ -1,0 +1,2 @@
+create a project for saving ideas
+loops help to find items in list
