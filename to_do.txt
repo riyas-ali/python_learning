@@ -1,1 +1,1 @@
-[['Reading', '23/23', 'Low']]
+[['Reading', '23/23', 'Low'], ['Washing', '31/05/23', 'High'], ['Walking', '20/06/23', 'Low'], ['Travel', '23/12/2023', 'Medium']]
