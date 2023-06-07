@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/robot" method="post">
+        <p>Are you made of metal?
+            <input type="radio" name="metal" value="yes">Yes
+            <input type="radio" name="metal" value="no">No
+        </p>
+        <p>What is infinity + 1?
+            <input type="text" name="infinity" required>
+        </p>
+        <p>Which is your favorite food?
+            <select name="food">
+                <option value="human food">Human food</option>
+                <option value="synthetic oil">Synthetic Oil</option>
+            </select>
+        </p>
+        <button type="submit">I am not a robot</button>
+    </form>
+</body>
+</html>
