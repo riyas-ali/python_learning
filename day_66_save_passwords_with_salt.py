@@ -17,7 +17,7 @@ def create_user():
     password = input("Password: ")
     check_duplicate = collection.find_one({"username": username})
     if check_duplicate:
-        print(f"{username} is not available. You can proceed with the login.")
+        print(f"{username} is available. You can proceed with the login.")
         return
     salt = random.randint(1000, 9999)
     new_password = f"{password}{salt}"
