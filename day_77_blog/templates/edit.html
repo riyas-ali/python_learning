@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riyas's Blog</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Riyas's Blog</h1>
+    <button type="button" onclick="location.href='/logout'">Logout</button>
+    <form action="/add" method="post">
+        <p>Title: <input type="text" name="title"></p>
+        <p>Date: <input type="date" name="date"></p>
+        <p>Body Text: <input type="text" name="body"></p>
+        <button type="submit">Save</button>
+    </form>
+    <hr>
+   {% for blog in blogs %}
+    <h2>{{ blog.title }}</h2>
+    <p>Date: {{ blog.date }}</p>
+    <p>{{ blog.body }}</p>
+    <hr>
+    {% endfor %}
+</body>
+</html>
