@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Player</title>
+</head>
+<body>
+    <h2>Tracks of my Years</h2>
+    <form action="/" method="post">
+        <p>Year: <input type="number" name="year" min="1900" max="2023" value="{{value}}"></p>
+        <button type="submit" style="margin-bottom: 10px">GO</button>
+    </form>
+    {% for music in music_list %}
+    <div style="margin-top: 5px; margin-bottom: 5px">
+        <strong>Artist:</strong> {{ music.track_name }}
+    </div>
+    <span>Links</span>
+    <a href="{{ music.url }}" target="_blank">{{ music.track_name }}</a>
+    {% endfor %}
+</body>
+</html>
