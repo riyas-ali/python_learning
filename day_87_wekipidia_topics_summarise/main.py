@@ -21,13 +21,13 @@ html = response.text
 
 soup = BeautifulSoup(html, 'html.parser')
 
-article = soup.find_all('div', {'class': 'mw-parser-output'})[1]
-
-content = article.find_all('p')
+articles = soup.find_all('div', {'class': 'mw-parser-output'})
 
 text = ''
-for p in content:
-    text += p.text
+for article in articles:
+    content = article.find_all('p')
+    for p in content:
+        text += p.text
 
 prompt = f'Summarise the text below in no more than 3 paragraphs."{text}"'
 ai_response = openai.Completion.create(model='text-davinci-003',
